@@ -1,0 +1,150 @@
+==========================192.168.3.5=================================
+--------------------------date;sar -u 1 1---------------------------------
+2018年 07月 28日 星期六 07:50:15 CST
+Linux 3.10.0-693.21.1.el7.x86_64 (localhost.localdomain) 	2018年07月28日 	_x86_64_	(1 CPU)
+
+07时50分15秒     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07时50分16秒     all      0.00      0.00      0.00      0.00      0.00    100.00
+平均时间:     all      0.00      0.00      0.00      0.00      0.00    100.00
+--------------------------free -g---------------------------------
+              total        used        free      shared  buff/cache   available
+Mem:              0           0           0           0           0           0
+Swap:             1           0           1
+--------------------------df -h | grep -v '/dev/loop0'---------------------------------
+文件系统        容量  已用  可用 已用% 挂载点
+/dev/sda3        18G  1.3G   17G    8% /
+devtmpfs        352M     0  352M    0% /dev
+tmpfs           362M     0  362M    0% /dev/shm
+tmpfs           362M  5.1M  357M    2% /run
+tmpfs           362M     0  362M    0% /sys/fs/cgroup
+/dev/sda1       497M  125M  372M   26% /boot
+tmpfs            73M     0   73M    0% /run/user/0
+--------------------------df -ih---------------------------------
+文件系统       Inode 已用(I) 可用(I) 已用(I)% 挂载点
+/dev/sda3        18M     34K     18M       1% /
+devtmpfs         88K     315     88K       1% /dev
+tmpfs            91K       1     91K       1% /dev/shm
+tmpfs            91K     401     91K       1% /run
+tmpfs            91K      16     91K       1% /sys/fs/cgroup
+/dev/sda1       500K     338    500K       1% /boot
+tmpfs            91K       1     91K       1% /run/user/0
+--------------------------systemctl is-active sshd---------------------------------
+active
+--------------------------systemctl is-active ntpd---------------------------------
+unknown
+==========================192.168.3.7=================================
+--------------------------date;top -bn 1 | head -10---------------------------------
+Fri Jul 27 23:50:28 CST 2018
+top - 23:50:28 up 7 min,  2 users,  load average: 0.33, 0.42, 0.28
+Tasks: 117 total,   1 running,  67 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.5 us,  1.6 sy,  0.0 ni, 85.1 id, 12.3 wa,  0.3 hi,  0.2 si,  0.0 st
+KiB Mem :   985116 total,   466720 free,   239308 used,   279088 buff/cache
+KiB Swap:  2097148 total,  2097148 free,        0 used.   544784 avail Mem 
+
+   PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+     1 root      20   0  220680   8388   6468 S   0.0  0.9   0:01.62 systemd
+     2 root      20   0       0      0      0 S   0.0  0.0   0:00.01 kthreadd
+     4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0+
+--------------------------free -g---------------------------------
+              total        used        free      shared  buff/cache   available
+Mem:              0           0           0           0           0           0
+Swap:             1           0           1
+--------------------------df -h | grep -v '/dev/loop0'---------------------------------
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        470M     0  470M   0% /dev
+tmpfs           482M     0  482M   0% /dev/shm
+tmpfs           482M  1.1M  480M   1% /run
+tmpfs           482M     0  482M   0% /sys/fs/cgroup
+/dev/sda3        17G  3.9G   14G  23% /
+tmpfs           482M     0  482M   0% /tmp
+/dev/sda1       976M  174M  736M  20% /boot
+tmpfs            97M     0   97M   0% /run/user/0
+--------------------------df -ih---------------------------------
+Filesystem     Inodes IUsed IFree IUse% Mounted on
+devtmpfs         118K   404  117K    1% /dev
+tmpfs            121K     1  121K    1% /dev/shm
+tmpfs            121K   550  120K    1% /run
+tmpfs            121K    17  121K    1% /sys/fs/cgroup
+/dev/sda3        8.5M  237K  8.3M    3% /
+tmpfs            121K     9  121K    1% /tmp
+/dev/sda1         64K   358   64K    1% /boot
+tmpfs            121K     6  121K    1% /run/user/0
+--------------------------systemctl is-active sshd---------------------------------
+active
+--------------------------systemctl is-active ntpd---------------------------------
+inactive
+==========================192.168.3.5=================================
+--------------------------date;sar -u 1 1---------------------------------
+2018年 07月 28日 星期六 07:54:47 CST
+Linux 3.10.0-693.21.1.el7.x86_64 (localhost.localdomain) 	2018年07月28日 	_x86_64_	(1 CPU)
+
+07时54分47秒     CPU     %user     %nice   %system   %iowait    %steal     %idle
+07时54分48秒     all      0.00      0.00      0.00      0.00      0.00    100.00
+平均时间:     all      0.00      0.00      0.00      0.00      0.00    100.00
+--------------------------free -g---------------------------------
+              total        used        free      shared  buff/cache   available
+Mem:              0           0           0           0           0           0
+Swap:             1           0           1
+--------------------------df -h | grep -v '/dev/loop0'---------------------------------
+文件系统        容量  已用  可用 已用% 挂载点
+/dev/sda3        18G  1.3G   17G    8% /
+devtmpfs        352M     0  352M    0% /dev
+tmpfs           362M     0  362M    0% /dev/shm
+tmpfs           362M  5.1M  357M    2% /run
+tmpfs           362M     0  362M    0% /sys/fs/cgroup
+/dev/sda1       497M  125M  372M   26% /boot
+tmpfs            73M     0   73M    0% /run/user/0
+--------------------------df -ih---------------------------------
+文件系统       Inode 已用(I) 可用(I) 已用(I)% 挂载点
+/dev/sda3        18M     34K     18M       1% /
+devtmpfs         88K     315     88K       1% /dev
+tmpfs            91K       1     91K       1% /dev/shm
+tmpfs            91K     402     91K       1% /run
+tmpfs            91K      16     91K       1% /sys/fs/cgroup
+/dev/sda1       500K     338    500K       1% /boot
+tmpfs            91K       1     91K       1% /run/user/0
+--------------------------systemctl is-active sshd---------------------------------
+active
+--------------------------systemctl is-active ntpd---------------------------------
+unknown
+==========================192.168.3.7=================================
+--------------------------date;top -bn 1 | head -10---------------------------------
+Fri Jul 27 23:55:01 CST 2018
+top - 23:55:01 up 11 min,  2 users,  load average: 0.04, 0.19, 0.21
+Tasks: 116 total,   1 running,  67 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.3 us,  1.1 sy,  0.0 ni, 90.5 id,  7.7 wa,  0.2 hi,  0.2 si,  0.0 st
+KiB Mem :   985116 total,   438832 free,   239464 used,   306820 buff/cache
+KiB Swap:  2097148 total,  2097148 free,        0 used.   543300 avail Mem 
+
+   PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+  2239 root      20   0  164008   3952   3524 R   6.2  0.4   0:00.01 top
+     1 root      20   0  220680   8388   6468 S   0.0  0.9   0:01.65 systemd
+     2 root      20   0       0      0      0 S   0.0  0.0   0:00.01 kthreadd
+--------------------------free -g---------------------------------
+              total        used        free      shared  buff/cache   available
+Mem:              0           0           0           0           0           0
+Swap:             1           0           1
+--------------------------df -h | grep -v '/dev/loop0'---------------------------------
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        470M     0  470M   0% /dev
+tmpfs           482M     0  482M   0% /dev/shm
+tmpfs           482M  1.1M  480M   1% /run
+tmpfs           482M     0  482M   0% /sys/fs/cgroup
+/dev/sda3        17G  3.9G   14G  23% /
+tmpfs           482M     0  482M   0% /tmp
+/dev/sda1       976M  174M  736M  20% /boot
+tmpfs            97M     0   97M   0% /run/user/0
+--------------------------df -ih---------------------------------
+Filesystem     Inodes IUsed IFree IUse% Mounted on
+devtmpfs         118K   404  117K    1% /dev
+tmpfs            121K     1  121K    1% /dev/shm
+tmpfs            121K   550  120K    1% /run
+tmpfs            121K    17  121K    1% /sys/fs/cgroup
+/dev/sda3        8.5M  237K  8.3M    3% /
+tmpfs            121K     9  121K    1% /tmp
+/dev/sda1         64K   358   64K    1% /boot
+tmpfs            121K     6  121K    1% /run/user/0
+--------------------------systemctl is-active sshd---------------------------------
+active
+--------------------------systemctl is-active ntpd---------------------------------
+inactive
